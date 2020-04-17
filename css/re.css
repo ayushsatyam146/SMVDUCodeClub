@@ -1,6 +1,5 @@
 .logoimg{
   width: 80px;
-  border-radius: 58px;
 }
 
 .text123{
@@ -132,4 +131,22 @@ h3 {
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
+}
+
+.descrip{
+  text-align: center;
+  font-size: 20px;
+}
+
+.footlogo{
+  margin-top: 25px;
+  margin-right:10px;
+  margin-bottom: 20px;
+}
+
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
