@@ -15,6 +15,8 @@
 	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+<!--   <script src="../javascript/navbar.js"></script> -->
+
 
 
   <link href="product.css" rel="stylesheet">
@@ -24,9 +26,10 @@
 <!-- my additiion -->
 
 <!-- end -->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<div class="sticky">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark " >
 	<a class="navbar-brand" href="index.html">
-    <img class="logoimg" src="../pics/codeclublogo.png" alt="logo" >
+    <img class="logoimg" src="../pics/logo.png" alt="logo" >
   </a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -50,12 +53,13 @@
         <a class="nav-link" href="#">Discussion</a>
       </li>
       <li class="nav-item" style="float:right;">
-       <a class="nav-link" href="dashboard.html">Dashboard</a>
+       <a class="nav-link" href="#">Dashboard</a>
       </li>      
   </div>    
     </ul>
   </div>  
 </nav>
+</div>
 <!-- start here -->
 <div class="bgimg-1">
   <div class="caption">
@@ -65,7 +69,7 @@
 <!-- break -->
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center; padding:50px 80px;text-align: justify;">
-  <p>Pick up a language of your choice and start coding now.</p>
+  <p class="descrip">Pick up a language of your choice and start coding now.</p>
   </div>
 </div>
 <!-- 1.Languages -->
@@ -81,7 +85,7 @@
 <!-- break -->
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Web Development can help you literally build your ideas from nothing. A must have tool with a coder!</p>
+  <p class="descrip">Web Development can help you literally build your ideas from nothing. A must have tool with a coder!</p>
   </div>
 </div>
 <!-- 2.Web development -->
@@ -97,7 +101,7 @@
 <!-- break -->
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Machine learning is the future of our world and you should totally invest sometime in it.</p>
+  <p class="descrip">Machine learning is the future of our world and you should totally invest sometime in it.</p>
   </div>
 </div>
 <!-- machine learning -->
@@ -113,7 +117,7 @@
 <!-- break -->
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>it's not necessary, but you are encouraged to try it.</p>
+  <p class="descrip">it's not necessary, but you are encouraged to try it.</p>
   </div>
 </div>
 <!-- Cp -->
@@ -129,7 +133,7 @@
 <!-- break -->
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>We all want look like a cool hacker from a movie,so give it a try!</p>
+  <p class="descrip">We all want look like a cool hacker from a movie,so give it a try!</p>
   </div>
 </div>
 <!-- Ethical hacking -->
@@ -145,7 +149,7 @@
 <!-- break -->
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>There are more thechnologies!</p>
+  <p class="descrip">There are more thechnologies!</p>
   </div>
 </div>
 <!-- misc tech -->
@@ -161,7 +165,7 @@
 <!-- break -->
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  <p class="descrip">Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   </div>
 </div>
 <!-- parallax -->
@@ -172,20 +176,20 @@
 </div>
 <!-- end here -->
 <footer class="page-footer font-small indigo">
-  <div class="container">
+  <div>
     <div class="row text-center d-flex justify-content-center pt-5 mb-3">
 
-      <div class="col-md-2 mb-3">
+      <div class="col-md-2 mb-3 ">
         <h6 class="text-uppercase font-weight-bold">
           <a href="#!"><div class="text123">About Us</div></a>
         </h6>
       </div>
-      <div class="col-md-2 mb-3">
+      <div class="col-md-2 mb-3 ">
         <h6 class="text-uppercase font-weight-bold">
           <a href="#!"><div class="text123">Contact Us</div></a>
         </h6>
       </div>
-      <div class="col-md-2 mb-3">
+      <div class="col-md-2 mb-3 ">
         <h6 class="text-uppercase font-weight-bold">
           <a href="#!"><div class="text123">Projects</div></a>
         </h6>
@@ -205,19 +209,11 @@
           <a href="#!"><div class="text123">github</div></a>
         </h6>
       </div>
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!"><div class="text123">facebook</div></a>
-        </h6>
-      </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
+<div class="footlogo">
+<a href="index.html" >
+    <img class="logoimg" src="../pics/logo.png" alt="logo" >
+</a>
+</div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
