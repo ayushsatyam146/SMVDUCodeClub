@@ -1,6 +1,5 @@
 .logoimg{
 	width: 80px;
-	border-radius: 58px;
 }
 
 .text123{
@@ -32,4 +31,16 @@
 
 footer{
 	background-color:#343a40;
+}
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.footlogo{
+  margin-top: 25px;
+  margin-right:10px;
+  margin-bottom: 20px;
 }
