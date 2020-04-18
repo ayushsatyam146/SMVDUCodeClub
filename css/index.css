@@ -37,10 +37,15 @@ footer{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index:10;
 }
 
 .footlogo{
   margin-top: 25px;
   margin-right:10px;
   margin-bottom: 20px;
+}
+
+.bg-dark{
+  background-color: rgba(52,58,64,1);
 }
