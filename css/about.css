@@ -71,31 +71,45 @@ p{
 }
 
 .profile{
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: 2%;
   margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: black;
 }
 
 .details{
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 50px;
   margin-right: 40px;
   text-align: center;
   font-size: 15px;
    font-family: 'Raleway', sans-serif;
+   font-weight: bold;
 }
 
 .proficon{
   height: 100px;
-  margin-left: 50px;
+  margin-left: 70px;
   margin-top: 40px;
   border: 2px solid #c2c2a3;
-  border-radius: 40%;
+  border-radius: 50%;
 }
 
 .tab{
-  background-color: rgba(52,58,64,1);
-  color: white;
   z-index: 5;
+}
+
+.profile:hover{
+  width: 250px;
+  height: 250px;
+  margin: 2%;
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: rgba(52,58,64,1);
+  color:white;
 }
