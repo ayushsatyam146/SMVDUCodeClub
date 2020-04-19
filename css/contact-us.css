@@ -1,4 +1,4 @@
-.logoimg{
+  .logoimg{
 	width: 80px;
 	border-radius: 58px;
 }
@@ -78,12 +78,16 @@ h2 {
 /*-------------------------------------*/
  
   .main-box{
-    column-count: 2;
+    /*column-count: 2;*/
+    column-width: 500px;
 
   }
   .left-box{
-    padding-left: 16%
+    padding-left: 14%
 
+  }
+  .location{
+    max-width: 95%;
   }
 /*
   .contacts li {
