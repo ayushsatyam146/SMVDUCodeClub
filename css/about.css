@@ -113,3 +113,24 @@ p{
   background-color: rgba(52,58,64,1);
   color:white;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(52,58,64,1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;}
