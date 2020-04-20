@@ -68,6 +68,8 @@ footer{
   text-align: left;
 }
 
-
+section {
+    min-height: 100vh; 
+}
 .dropdown:hover .dropdown-content {
   display: block;}
