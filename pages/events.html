@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dashboard</title>
-
+	<title>Events and Announcements</title>
+    <link rel = "icon" href ="../pics/logo.png" type = "image/x-icon"> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/events.css" />	
+
+	<link rel="stylesheet" type="text/css" href="../css/events.css" />
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>	
+
+	
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+
 </head>
 
 
 
 <body>
-
-<!-- nvbar start -->
+<div class="sticky">
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
 	<a class="navbar-brand" href="index.html">
     <img class="logoimg" src="../pics/logo.png" alt="logo" >
@@ -29,13 +33,33 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Events & Announcements</a>
+        <a class="nav-link" href="events.html">Events & Announcements</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Host Classes</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resources.html">Resources</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropbtn" href="resources.html">Resources</a>
+        <ul class="dropdown-content">
+        	<li class="nav-item">
+        	<a class="nav-link" href="language.html">Learn Language</a>
+            </li>
+        	<li class="nav-item">
+        	<a class="nav-link" href="#">Web Development</a>
+        	</li>	
+        	<li class="nav-item">
+        	<a class="nav-link" href="#">Machine Learning</a>
+        	</li>	
+        	<li class="nav-item">
+        	<a class="nav-link" href="#">Competitive Programming</a>
+        	</li>	
+        	<li class="nav-item">
+        	<a class="nav-link" href="#">Ethical Hacking</a>
+        	</li>	
+        	<li class="nav-item">
+        	<a class="nav-link" href="#">Misc</a>
+        	</li>	
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Blogs & Articles</a>
@@ -43,83 +67,101 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Discussion</a>
       </li>
-            
+      <li class="nav-item" style="float:right;">
+       <a class="nav-link" href="dashboard.html">Dashboard</a>
+      </li>      
   </div>    
     </ul>
   </div>  
 </nav>
+</div>
+<section>
 
-<!-- navbar end -->
-
-
-
-
-
-
-<!-- main content -->
-<div id="events">
-  <h1>Events</h1><br><br>
-  <div>
+<div class="container">
+  <div class="col-sm-4 offset-sm-4 col-md-4 offset-md-4 col-lg-4 offset-lg-4">
+    <br>
     <br><br>
+    <div style=" text-align: center;font-size: 40px; "class="textdash">CodeClub<br>Events</div>
   </div>
 </div>
-  <div class="main-box">
-    <div class="container">
-      <div class="inside">
-        <div class="wrapper">
-          <!-- aside -->
-          <aside>
-            <h2><span>UPCOMING EVENTS!</span></h2><br><br>
-            <!-- .news -->
-            <ul class="news">
-              <li>
-                <figure><strong>01</strong></figure>
-                <h3><a href="event1.html">EXPLORE ML</a></h3>
-             An initiative by google to promote students towards AI ..
-              </li><br><br>
-              <li>
-                <figure><strong>02</strong></figure>
-                <h3><a href="event2.html">GITHUB INTRODUCTION</a></h3>
-                An introduction to the open source community..
-              </li><br><br>
-              <li>
-                <figure><strong>03</strong></figure>
-                <h3><a href="event3.html">LINUX FAMILIARIZATION</a></h3>
-                Choosing the right operating system for you.. 
-              </li><br><br> 
-              <li>
-                <figure><strong>04</strong></figure>
-                <h3><a href="event4.html">WEB DEVELOPMENT</a></h3>
-                A workshop to get you started with web development.. 
-              </li><br><br><br><br><br><br><br><br><br><br> 
-            </ul>
-            <!-- /.news -->
-          </aside> 
-          <!-- content -->
-          <section>
-            <article>
-              <h2>GOOGLE<span> EXPLORE ML!</span></h2>
-              <h5><strong><span id="details">Note from the author: </span></strong></h5><br>
-              <img src ="../pics/msharma.png" alt="Mohit Sharma" id="image" width=40% height=40% class="mohit">
-              <p>Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of Machine Learning Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus. In order to help equip student facilitators to train others, Google hosts a series of Machine Learning Academies. This course is aimed to make students self-sufficient to pursue  ML on their own. Explore ML is a 2-day training experience for student facilitators to get familiar with the programs’ content, meet one another and connect to Googlers.</p>
-             <p>We will be walking you through Explore ML, it’s modules and basic ML concepts. Additionally, we will have you go through selected modules of the course, with a teaching assistant guiding you in the course’s practical pieces/exercises and troubleshooting and pieces of the content where you are struggling.</p><br><br><br><br><br><br>
 
-            </article> 
-          </section>
+<div class="container">
+  <div class="col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+    <br>
+    <br>
+    <img class="img-responsive" src="https://dscbvp.dev/static/media/events.fe4b7bbc.svg" >
+  </div>
+</div>
+
+<br>
+<br>
+<div class="container">
+  <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+    <div class="card">
+        <div class="cardbox">
+          <div style="text-align: left;"class="textdash">
+            <div class="date">5th May<br></div>
+            <div class="topic" >Explore ML workshop<br></div>
+            <div class="time">6:00 PM<br></div>
+            <div class="venue">Internet lab<br></div>            
+            <div class="notes">All the important notes and text to be added regarding this event. we can elaborate about the event and also explain its importance or any other stuff we may want to write</div><br><br>
+            <div class="links"><a href="#">Important Links</a></div>
+          </div>
         </div>
-      </div>
     </div>
   </div>
+</div>
 
+<br>
+<div class="container">
+  <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+    <div class="card">
+        <div class="cardbox">
+          <div style="text-align: left;"class="textdash">
+            <div class="date">5th May<br></div>
+            <div class="topic" >Explore ML workshop<br></div>
+            <div class="time">6:00 PM<br></div>
+            <div class="venue">Internet lab<br></div>            
+            <div class="notes">All the important notes and text to be added regarding this event. we can elaborate about the event and also explain its importance or any other stuff we may want to write</div><br><br>
+            <div class="links"><a href="#">Important Links</a></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+    <div class="card">
+        <div class="cardbox">
+          <div style="text-align: left;"class="textdash">
+            <div class="date">5th May<br></div>
+            <div class="topic" >Explore ML workshop<br></div>
+            <div class="time">6:00 PM<br></div>
+            <div class="venue">Internet lab<br></div>            
+            <div class="notes">All the important notes and text to be added regarding this event. we can elaborate about the event and also explain its importance or any other stuff we may want to write</div><br><br>
+            <div class="links"><a href="#">Important Links</a></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
 
+<br><br><br>
 
-<!-- <main conten end -->
+<div class="container">
+  <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-6 col-lg-6 offset-lg-3">
+    <button type="button" class="btn btn-primary" id="but1">Add event</button>
+  
+  </div>
+</div>
 
+  
+  
+<br><br><br><br>
+<br><br><br><br>
+</section>
 
-
-
-
-  <!-- footer start -->
 
 <footer class="page-footer font-small indigo">
   <div class="container">
@@ -127,12 +169,12 @@
 
       <div class="col-md-2 mb-3">
         <h6 class="text-uppercase font-weight-bold">
-          <a href="#!"><div class="text123">About Us</div></a>
+          <a href="about.html"><div class="text123">About Us</div></a>
         </h6>
       </div>
       <div class="col-md-2 mb-3">
         <h6 class="text-uppercase font-weight-bold">
-          <a href="#!"><div class="text123">Contact Us</div></a>
+          <a href="contact-us.html"><div class="text123">Contact Us</div></a>
         </h6>
       </div>
       <div class="col-md-2 mb-3">
@@ -155,19 +197,15 @@
           <a href="#!"><div class="text123">github</div></a>
         </h6>
       </div>
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!"><div class="text123">facebook</div></a>
-        </h6>
-      </div>
-<br>
+<div class="footlogo">
+<a href="index.html" >
+    <img class="logoimg" src="../pics/logo.png" alt="logo" >
+</a>
+</div>
+
+
 </footer>
-<!-- footer end -->
+
 
 </body>
 </html>
-
-
-
-<!-- ********************************** -->
-
