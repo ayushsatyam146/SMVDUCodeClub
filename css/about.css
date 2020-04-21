@@ -134,3 +134,13 @@ p{
 
 .dropdown:hover .dropdown-content {
   display: block;}
+
+.textdash2{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../pics/aboutusback.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 75%;
+  text-align: center;
+  font-size: 40px;
+}
