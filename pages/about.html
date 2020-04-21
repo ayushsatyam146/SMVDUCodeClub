@@ -37,7 +37,7 @@
         <a class="nav-link" href="events.html">Events & Announcements</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Host Classes</a>
+        <a class="nav-link" href="hostclasses.html">Host Classes</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="resources.html">Resources</a>
@@ -69,19 +69,16 @@
         <a class="nav-link" href="#">Discussion</a>
       </li>
       <li class="nav-item" style="float:right;">
-       <a class="nav-link" href="#">Dashboard</a>
+       <a class="nav-link" href="dashboard.html">Dashboard</a>
       </li>      
   </div>    
     </ul>
   </div>  
 </nav>
 </div>
-<section name="canvas">
-        <div class="ui placeholder segment">
-            <canvas id="mycanvas" width="800" height="600" style="display:block;margin:0 auto"></canvas>
-        </div>
-    </section>
-<br><br><br><br><br><br>
+
+<div class="textdash2"><br><br><br><br><br><br>
+</div>
 <div class="container desc">
 	<br>
 	<h1>About Us</h1>
@@ -123,7 +120,7 @@ Our aim is to increase the coding culture at our university and make coding a es
       </div>
       <div class="col-md-2 mb-3">
         <h6 class="text-uppercase font-weight-bold">
-          <a href="#!"><div class="text123">Contact Us</div></a>
+          <a href="contact-us.html"><div class="text123">Contact Us</div></a>
         </h6>
       </div>
       <div class="col-md-2 mb-3">
@@ -154,98 +151,6 @@ Our aim is to increase the coding culture at our university and make coding a es
 
 
 </footer>
-
-
-<script type="text/javascript">
-     $(document).ready(function(){
-            $('.ui.accordion').accordion();
-        });
-
-        let canvas = document.querySelector('#mycanvas');
-        let canvasContext = canvas.getContext('2d');
-
-        let centerX = Math.random() * canvas.width;
-        let centerY = Math.random() * canvas.height;
-        let RAD = 1;
-        let POINTS = [];
-        let N = 3;
-        let PADDING = 50;
-        let distRatio = 0.5;
-        
-        function playForSide() {
-            N = document.querySelector('#nthsidedpolygon').value;
-            if (N < 3) {
-                alert('vertices must be greater than 2');
-                return;
-            }
-
-            distRatio = document.querySelector('#distratio').value/100;
-            if (distRatio > 0 && distRatio < 1) {
-                // all good here 
-            }
-            else {
-                alert('distance to travel must be less than 100%, try 61.8');
-                document.querySelector('#distratio').value = 61.8;
-                distRatio = 61.8;
-            }
-            
-            init();
-        }
-
-        function colorRect(topLeftX,topLeftY, boxWidth,boxHeight, fillColor) {
-            canvasContext.beginPath();
-
-            canvasContext.fillStyle = fillColor;
-            canvasContext.fillRect(topLeftX,topLeftY, boxWidth,boxHeight);
-
-            canvasContext.closePath();
-        }
-        
-        function colorCircle(centerX,centerY, radius, fillColor) {
-            canvasContext.beginPath();
-
-            canvasContext.fillStyle = fillColor;
-            canvasContext.arc(centerX,centerY, radius, 0,Math.PI*2, true);
-            canvasContext.fill();
-
-            canvasContext.closePath();
-        }
-
-        function draw() {
-            let W = canvas.width;
-            let H = canvas.height;
-            let h = H - PADDING;
-            let origin = [W/2, h/2+PADDING/2];
-            let rad = h/2;
-            let theta = (Math.PI*2)/N; 
-            let target = Math.floor(Math.random() * N);
-
-            for (let i=0; i<N; i++) {
-                let currentTheta = i*theta - (Math.PI/2); //rotating by 90 degs for better aesthetics
-                POINTS[i] = [origin[0] + rad*Math.cos(currentTheta), origin[1]+rad*Math.sin(currentTheta)];
-                colorCircle(POINTS[i][0],POINTS[i][1], RAD*10, i == target?'red':'cyan');
-            }
-            
-            colorCircle(centerX, centerY, RAD, 'cyan');
-
-            
-            centerX = (distRatio * POINTS[target][0]) + (1-distRatio) * centerX;
-            centerY = (distRatio * POINTS[target][1]) + (1-distRatio) * centerY;
-
-            const myTimer = setTimeout(draw, 1000/300);
-        }
-        
-        function init() {
-            colorRect(0,0, canvas.width,canvas.height, 'black'); 
-            draw();
-        }
-
-        window.onload = function() {
-            init();
-        }
-
-    </script>
-
 
 </body>
 </html>
