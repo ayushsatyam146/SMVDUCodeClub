@@ -16,6 +16,16 @@
 
 <body>
 
+<script>SEC_HTTPS = false;
+SEC_BASE = "<customized_link>"; 
+(function(d, s, id){ SEC = window.SEC || (window.SEC = []);
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; 
+  js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);   
+}(document, "script", "sphere-engine-compilers-jssdk"));
+</script>
+
 <!-- nvbar start -->
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
 	<a class="navbar-brand" href="index.html">
@@ -56,16 +66,8 @@
 <br>
 
 
+<h1>test</h1>
 
-<script>SEC_HTTPS = false;
-SEC_BASE = "<customized_link>"; 
-(function(d, s, id){ SEC = window.SEC || (window.SEC = []);
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; 
-  js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
-  fjs.parentNode.insertBefore(js, fjs);   
-}(document, "script", "sphere-engine-compilers-jssdk"));
-</script>
 <div class="sec-widget" data-widget="<hash>"></div>
 
 
@@ -75,7 +77,7 @@ SEC_BASE = "<customized_link>";
         <div class="contact-us-box">
             <h2>Contact<span> Us</span></h2>
               
-                <!-- .contacts -->
+                <!-- .contactss -->
               <ul id="contact-details">
                 
                 <li><strong>Zip Code:</strong> 182320</li>
