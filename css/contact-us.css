@@ -82,6 +82,7 @@ h2 {
   .main-box{
     
     column-width: 500px;
+    padding-left: 50%
     padding-right:3%;
   }
   .left-box{
