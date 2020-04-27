@@ -54,6 +54,8 @@ h2 {
   font-family: 'Poppins';
 }
 
+
+
 /*-------------------------------------*/
   h2 span {
     color:#8a8a8a;
@@ -79,36 +81,18 @@ h2 {
  
   .main-box{
     /*column-count: 2;*/
-    column-width: 500px;
+    column-width: 1000px;
 
   }
   .left-box{
-    padding-left: 14%
+    padding-left: 23%
+
 
   }
   .location{
     max-width: 95%;
   }
-/*
-  .contacts li {
-    width:50%;
-    overflow:hidden;
-  }
-  .contacts li strong {
-    float:left;
-    width:100px;
-  }
 
-#contact-info-bar{
-  float: left;
-  width: 50%;
-  padding-bottom: 60px;
-  margin-bottom: 80px;
-}
-
-}
-
-}*/
 
 
 .iframe{
