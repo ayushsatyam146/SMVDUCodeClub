@@ -34,9 +34,9 @@ html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body{
+/* body{
   font:normal 75% Arial, Helvetica, sans-serif;
-}
+} */
 
 canvas{
   display:block;
