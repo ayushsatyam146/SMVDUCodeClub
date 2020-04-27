@@ -78,35 +78,6 @@ h2 {
     width:100px;
   }
 /*-------------------------------------*/
- 
-  .main-box{
-    
-    column-width: 500px;
-    padding-left: 50%
-    padding-right:3%;
-  }
-  .left-box{
-    padding-left: 14%
-
-  }
-
-  .location{
-    max-width: 95%;
-  }
-
-    .google-maps {
-        position: relative;
-        padding-bottom: 60%;
-        height: 0;
-        overflow: hidden;
-    }
-    .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        column-width: 800px;
-        padding-right: 4%
-    }
 
 .iframe{
   float: left;
@@ -116,9 +87,3 @@ h2 {
   width: 50%;
   padding-bottom: 60px; 
 }
-
-
-
-
-
-
