@@ -2,33 +2,39 @@
 <html>
 <head>
 	<title>CodeClub SMVDU</title>
-    <link rel = "icon" href ="../pics/logo.png" type = "image/x-icon"> 
+    <link rel = "icon" href ="../pics/logo.png" type = "image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="../css/cp.css" />
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-	
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="../css/preloader.css">
 
 </head>
 
 
 
 <body>
+	
+	<div id="overlay">
+		<div class="loader"></div>
+	</div>
 
 <script>
 SEC_HTTPS = true;
-SEC_BASE = "compilers.widgets.sphere-engine.com"; 
+SEC_BASE = "compilers.widgets.sphere-engine.com";
 (function(d, s, id){ SEC = window.SEC || (window.SEC = []);
   var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; 
+  if (d.getElementById(id)) return; js = d.createElement(s); js.id = id;
   js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
-  fjs.parentNode.insertBefore(js, fjs);   
+  fjs.parentNode.insertBefore(js, fjs);
 }(document, "script", "sphere-engine-compilers-jssdk"));
 </script>
 <div class="wrapper">
@@ -37,7 +43,7 @@ SEC_BASE = "compilers.widgets.sphere-engine.com";
   <a class="navbar-brand" href="index.html">
     <img class="logoimg" src="../pics/logo.png" alt="logo" >
   </a>
-  
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -57,19 +63,19 @@ SEC_BASE = "compilers.widgets.sphere-engine.com";
             </li>
           <li class="nav-item">
           <a class="nav-link" href="webdevelopment.html">Web Development</a>
-          </li> 
+          </li>
           <li class="nav-item">
           <a class="nav-link" href="ml.html">Machine Learning</a>
-          </li> 
+          </li>
           <li class="nav-item">
           <a class="nav-link" href="cp.html">Competitive Programming</a>
-          </li> 
+          </li>
           <li class="nav-item">
           <a class="nav-link" href="eh.html">Ethical Hacking</a>
-          </li> 
+          </li>
           <li class="nav-item">
           <a class="nav-link" href="mt.html">Misc</a>
-          </li> 
+          </li>
         </ul>
       </li>
       <li class="nav-item">
@@ -80,13 +86,13 @@ SEC_BASE = "compilers.widgets.sphere-engine.com";
       </li>
       <li class="nav-item" style="float:right;">
        <a class="nav-link" href="dashboard.html">Dashboard</a>
-      </li>  
+      </li>
       <li class="nav-item ml-auto" style="float:right;" id="conduct">
        <a class="nav-link" href="conduct.html">Code Of Conduct</a>
-      </li>           
-  </div>    
+      </li>
+  </div>
     </ul>
-  </div>  
+  </div>
 </nav>
 </div>
 
@@ -119,7 +125,7 @@ SEC_BASE = "compilers.widgets.sphere-engine.com";
     <div class="col-sm-12 col-md-6 col-lg-4">
       <div class="card">
           <div class="cardbox">
-            <h4><b>Competitive<br>HandBook</b></h4> 
+            <h4><b>Competitive<br>HandBook</b></h4>
             <img style="width:30%"src="../pics/cp1.jpg">
             <a href="https://cses.fi/book/book.pdf">
     <button type="button" id="but1" class="btn btn-outline-success">Click Here</button>
@@ -130,20 +136,20 @@ SEC_BASE = "compilers.widgets.sphere-engine.com";
     <div class="col-sm-12 col-md-6 col-lg-4">
       <div class="card">
           <div class="cardbox">
-            <h4><b>DSA<br> CodeChef</b></h4> 
+            <h4><b>DSA<br> CodeChef</b></h4>
             <img style="width:30%"src="../pics/cplogo.jpg">
             <br>
             <p><a href="https://www.codechef.com/LEARNDSA?order=desc&sortBy=successful_submissions">
     <button type="button" id="but1" class="btn btn-outline-success">Click Here</button>
     </a></p>
-            
+
           </div>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4">
       <div class="card">
           <div class="cardbox">
-            <h4><b>GeeksForGeeks<br>Algorithms</b></h4> 
+            <h4><b>GeeksForGeeks<br>Algorithms</b></h4>
             <img style="width:30%"src="../pics/weblogo.jpeg">
             <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">
     <button type="button" id="but1" class="btn btn-outline-success">Click Here</button>
@@ -152,10 +158,10 @@ SEC_BASE = "compilers.widgets.sphere-engine.com";
             <br>
           </div>
       </div>
-    </div>    
-  
+    </div>
+
   </div>
-  
+
 </div>
   </div>
 </div>
@@ -206,8 +212,6 @@ SEC_BASE = "compilers.widgets.sphere-engine.com";
 
 </footer>
 
-
+<script src="../javascript/preloader.js"></script>
 </body>
 </html>
-
-
