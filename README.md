@@ -5,3 +5,11 @@ See the Beta version of This Website : https://ayushsatyam146.github.io/SMVDUCod
 
 {Dont use Google Chrome currently we are having a issue till then please use other web browser}
 
+Install Dependencies
+
+##### Via npm
+
+`npm install github-card`
+
+Add this to the project directory.
+
