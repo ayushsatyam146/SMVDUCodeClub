@@ -104,6 +104,11 @@ a,a:hover{
 	border-radius: 16px;
 	box-shadow: 0 0 6px grey;
 	height: 300px;
+   box-sizing: border-box;
+   font-size: 1.3vw;
+  overflow: hidden
+
+
 }
 
 .blog-post p{
@@ -130,4 +135,8 @@ a,a:hover{
   height: inherit;
 	border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
+}
+
+#blogcon{
+  overflow: hidden
 }
