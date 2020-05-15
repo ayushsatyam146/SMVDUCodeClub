@@ -17,6 +17,10 @@
 	
 	<meta name="viewport" content="width=device-width, height=device-height ,initial-scale=1">
 
+  	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 
@@ -79,7 +83,7 @@
 </nav>
 <br>
 <br>
-<div id="top" class="container">
+<div id="top" class="container" style="font-family: 'Josefin Sans', sans-serif;">
 	<div class="row">
 		<div class="col-sm-6 col-md-6 col-lg-6">
 			<br>
@@ -99,7 +103,10 @@
         </div>
 		<div class="col-sm-6 col-md-6 col-lg-6">
 			
-			<img class="img-responsive" src="https://dscbvp.dev/static/media/header.6103d4b2.svg" >
+			<div class="box" style="font-family: 'Exo 2', sans-serif;">
+  <div class="title">Smvdu <br> CodeClub</div>
+  <div class="subtitle"> geek + smart + curious + nerd + ingenious + cunning = ME </div>
+</div>
 			
 		</div>
 	</div>
@@ -110,7 +117,23 @@
 <br>
 <br>
 
+<script type="text/javascript">
+$(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+});
 
+</script>
 
 <br><br><br><br>
 <br><br><br><br><br>
