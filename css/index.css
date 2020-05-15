@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+  /* min-height: 100%; */
+  min-width: 100%;
+  position: relative;
+}
+
+
+
 .logoimg{
 	width: 80px;
 }
@@ -32,6 +41,7 @@
 footer{
  background-color:#343a40;
   width: 100%;
+  position: absolute;
 }
 
 
