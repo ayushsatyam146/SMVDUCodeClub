@@ -80,6 +80,24 @@ router.post(
   }
 );
 
+// @type    POST
+//@route    /api/profile/username
+// @desc    route for getting profiles publically from username 
+//          like codeclub.smvdu/ayushsatyam will fetch profile for ayushsatyam
+// @access  PUBLIC
+router.get('/:username',
+(req,res)=>{
+  Profile.findOne({username : req.params.username})
+  .populate("user",["name","profilepic"])
+  .then(profile =>{
+    if (!profile) {
+      res.status(404).json({ usernotfound: "unable to find user" })
+    }
+    res.json(profile);
+  } 
+  )
+  .catch(err=> console.log('problem in fetching profile ' + err));
+});
 
 
 module.exports = router;
