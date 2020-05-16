@@ -99,5 +99,19 @@ router.get('/:username',
   .catch(err=> console.log('problem in fetching profile ' + err));
 });
 
+// @type    DELETE 
+//@route    /api/profile/
+// @desc    route for deleting user based on ID
+// @access  PUBLIC
+router.delete('/',passport.authenticate('jwt',{session:false}),(req,res)=>{
+  Profile.findOne({user:req.user.id})
+  Profile.findByIdAndRemove({ user: req.user.id })
+    .then( ()=>{
+      Person.findOneAndRemove({_id:req.user.id})
+        .then(()=>res.json({success:'delete was a suceess'}))
+        .catch(err=>console.log(err));
+    })
+    .catch(err=>console.log(err));
+})
 
 module.exports = router;
