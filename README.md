@@ -8,7 +8,8 @@ Install Dependencies
 
 ##### Via npm
 
-`npm install github-card`
+`npm install '
+' npm serve'
 
 Add this to the project directory.
 
